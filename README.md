@@ -1,24 +1,26 @@
-# vue2-work
+# 🧠 Vue 2 Skills App
 
-## Project setup
-```
-npm install
-```
+A simple and elegant Vue 2 application that lets you manage a list of your personal skills. Add, validate, and remove
+skills dynamically — all with smooth animations and clean UI.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+---
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## ✨ Features
 
-### Lints and fixes files
-```
-npm run lint
-```
+- ✅ Add new skills with validation (min 5 characters)
+- ❌ Remove existing skills
+- ⚙️ Real-time validation using [VeeValidate](https://vee-validate.logaretm.com/v3)
+- 🎭 Transitions and animations with [Animate.css](https://animate.style/)
+- 🎨 Minimal, responsive design
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+---
+
+## 🚀 Tech Stack
+
+- **Vue 2**
+- **Vue Router** (for routing between pages)
+- **VeeValidate** (form validation)
+- **Animate.css** (animations)
+- **Font Awesome** (icons)
+
+---
