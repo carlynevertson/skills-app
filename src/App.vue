@@ -1,28 +1,60 @@
-<template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
-</template>
+<template >
+  <div id = "app" >
+    <nav >
+      <router-link to = "/" >Home</router-link >
+      <router-link to = "/about" >About</router-link >
+    </nav >
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+    <router-view />
+  </div >
+</template >
+
+<script >
+import Skills from '@/components/Skills.vue'
 
 export default {
-  name: 'App',
+  name: 'app',
   components: {
-    HelloWorld
+    /* eslint-disable */
+    Skills,
   }
 }
-</script>
+</script >
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped >
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body {
+  background-color: #EEEEEE;
+  font-family: 'Montserrat', sans-serif;
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+  padding-top: 50px;
 }
-</style>
+
+body, html {
+  margin: 0;
+  height: 100%;
+}
+
+#app {
+  width: 50%;
+}
+
+nav {
+  padding: 20px 20px 20px 0;
+}
+
+nav a {
+  padding: 10px;
+  text-decoration: none;
+  background: #d9d2d2;
+  border-radius: 3px;
+  color: rgb(10, 10, 10);
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+</style >
